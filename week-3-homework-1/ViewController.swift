@@ -31,6 +31,12 @@ class ViewController: UIViewController, SendDataProtocol {
             let vc = segue.destination as? ProtocolViewController
             vc?.delegate = self
         }
+        else if segue.destination is ClosureViewController{
+            let vc = segue.destination as? ClosureViewController
+            vc?.closureDataBack = { text in
+                self.label.text = text
+            }
+        }
     }
 
 }

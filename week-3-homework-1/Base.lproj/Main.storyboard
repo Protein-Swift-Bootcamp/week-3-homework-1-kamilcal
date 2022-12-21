@@ -192,6 +192,9 @@
                                 <rect key="frame" x="145" y="396" width="103.33333333333331" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Send Data"/>
+                                <connections>
+                                    <action selector="sendDatabutton:" destination="6Lb-Mz-hjB" eventType="touchUpInside" id="G9a-W4-Qua"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6d2-TQ-YKL"/>
@@ -204,6 +207,9 @@
                             <constraint firstItem="VeO-hb-Y42" firstAttribute="leading" secondItem="6d2-TQ-YKL" secondAttribute="leading" id="Z8B-Ht-eNo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="zFZ-e7-kSo" id="KcM-t5-R5R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldf-j8-foH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
