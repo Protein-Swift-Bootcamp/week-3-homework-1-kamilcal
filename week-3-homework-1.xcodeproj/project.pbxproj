@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21906F829533906004CE189 /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21906F729533906004CE189 /* ProtocolViewController.swift */; };
+		D21906FA29533921004CE189 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21906F929533921004CE189 /* NotificationCenterViewController.swift */; };
+		D21906FC2953393C004CE189 /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21906FB2953393C004CE189 /* ClosureViewController.swift */; };
 		D29DD71129532CD1008F0A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29DD71029532CD1008F0A11 /* AppDelegate.swift */; };
 		D29DD71329532CD1008F0A11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29DD71229532CD1008F0A11 /* SceneDelegate.swift */; };
 		D29DD71529532CD1008F0A11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29DD71429532CD1008F0A11 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D21906F729533906004CE189 /* ProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolViewController.swift; sourceTree = "<group>"; };
+		D21906F929533921004CE189 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		D21906FB2953393C004CE189 /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 		D29DD70D29532CD1008F0A11 /* week-3-homework-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "week-3-homework-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29DD71029532CD1008F0A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D29DD71229532CD1008F0A11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				D29DD71929532CD2008F0A11 /* Assets.xcassets */,
 				D29DD71B29532CD2008F0A11 /* LaunchScreen.storyboard */,
 				D29DD71E29532CD2008F0A11 /* Info.plist */,
+				D21906F729533906004CE189 /* ProtocolViewController.swift */,
+				D21906F929533921004CE189 /* NotificationCenterViewController.swift */,
+				D21906FB2953393C004CE189 /* ClosureViewController.swift */,
 			);
 			path = "week-3-homework-1";
 			sourceTree = "<group>";
@@ -138,6 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21906FC2953393C004CE189 /* ClosureViewController.swift in Sources */,
+				D21906FA29533921004CE189 /* NotificationCenterViewController.swift in Sources */,
+				D21906F829533906004CE189 /* ProtocolViewController.swift in Sources */,
 				D29DD71529532CD1008F0A11 /* ViewController.swift in Sources */,
 				D29DD71129532CD1008F0A11 /* AppDelegate.swift in Sources */,
 				D29DD71329532CD1008F0A11 /* SceneDelegate.swift in Sources */,
