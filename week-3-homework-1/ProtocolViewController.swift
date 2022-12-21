@@ -7,9 +7,33 @@
 
 import UIKit
 
+protocol SendDataProtocol{
+    func sendDataToViewController(data: String)
+}
+
 class ProtocolViewController: UIViewController {
+    
+    var delegate: SendDataProtocol?
+    
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func sendDataButton(_ sender: UIButton) {
+        
+        if self.delegate != nil {
+            var sendText = ""
+            if textField.text == "" || textField.text == nil{
+                sendText = "Back To Protocol"
+            } else {
+                sendText = textField.text!
+            }
+            self.delegate?.sendDataToViewController(data: sendText)
+            dismiss(animated: true)
+        }
     }
 }
