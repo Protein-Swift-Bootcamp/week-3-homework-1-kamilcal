@@ -15,7 +15,7 @@ class ProtocolViewController: UIViewController {
     
     var delegate: SendDataProtocol?
     
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textLabel: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +27,10 @@ class ProtocolViewController: UIViewController {
         
         if self.delegate != nil {
             var sendText = ""
-            if textField.text == "" || textField.text == nil{
+            if textLabel.text == "" || textLabel.text == nil{
                 sendText = "Back To Protocol"
             } else {
-                sendText = textField.text!
+                sendText = textLabel.text!
             }
             self.delegate?.sendDataToViewController(data: sendText)
             dismiss(animated: true)

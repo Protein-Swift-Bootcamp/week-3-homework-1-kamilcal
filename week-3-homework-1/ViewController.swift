@@ -9,15 +9,21 @@ import UIKit
 
 class ViewController: UIViewController, SendDataProtocol {
   
-    @IBOutlet weak var textField: UILabel!
+    @IBOutlet weak var label: UILabel!
     
     func sendDataToViewController(data: String) {
-        textField.text = data
+        label.text = data
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let notificationCenter: NotificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(notificationBack(myData: )), name: .notVC, object: nil)
+    }
+    
+    @objc func notificationBack(myData: Notification){
+        let data = myData.object as? String
+        label.text = data
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -27,5 +33,8 @@ class ViewController: UIViewController, SendDataProtocol {
         }
     }
 
+}
+extension Notification.Name {
+    static let notVC = Notification.Name(rawValue: "NotVC")
 }
 
